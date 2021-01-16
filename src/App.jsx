@@ -29,7 +29,7 @@ function App (props){
   let pTagWish = props.wishList.map(wish =>
      <p onClick={()=>{props.deleteItem(wish)}}>{wish}</p>
    )
-// console.log(props.wishList);
+   
   return(
     <div className="main-div">
       <Form className="form">
