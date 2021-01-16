@@ -1,5 +1,6 @@
 export const ADD_ITEM = 'ADD_ITEM';
 export const DELETE_ITEM = 'DELETE_ITEM';
+export const EMPTY_LIST = 'EMPTY_LIST';
 
 export const addItem = (item) => {
   return {
@@ -14,3 +15,10 @@ export const deleteItem = (item) => {
     payload: item,
   };
 };
+
+export const emptyList = (item) => {
+  return {
+    type: EMPTY_LIST,
+    payload: item,
+  }
+}
